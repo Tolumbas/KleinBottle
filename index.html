@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Klein Bottle</title>
+		<style>
+		html,body{
+			width:100%;
+			height: 100%;
+			margin:0;
+			overflow: hidden;
+		}
+		canvas{
+			top:0;
+			z-index:-1;
+			position: absolute;
+			width:100%;
+			height:100%;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div id="controls">
+			<button onclick="changeShape('HyperCubeLines')">HyperCube Lines</button>
+			<button onclick="changeShape('HyperCubeShaded')">HyperCube Shaded</button>
+			<button onclick="changeShape('HyperSphere')">HyperSphere</button>
+			<button onclick="changeShape('3D Tourus')">3D Tourus</button>
+			<button onclick="changeShape('KleinBottle')">KleinBottle</button>
+			<button onclick="changeShape('KleinBottleShaded')">KleinBottle Shaded</button>
+			<span id="loading">loading...</span>
+		</div>
+		<canvas id="picasso"></canvas>
+		<script src="WebGLlib.js"></script>
+		<script defer src="main.js"></script>
+	</body>
+</html>
